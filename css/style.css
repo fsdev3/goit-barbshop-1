@@ -2,6 +2,8 @@
   --primary-white-color: #ffffff;
   --accent-color: #ff6c00;
   --dark-color: #303030;
+  --grey-rgba: rgba(157, 164, 189, 0.6);
+  --grey-main: #9da4bd;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -14,34 +16,11 @@ body {
 .link {
   text-decoration: none;
 }
-/* .link:visited {
-  color: var(--dark-color);
-} */
 .list {
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
-/* .button-order {
-  display: inline-block;
-  background: var(--logo-and-button-color);
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: var(--primary-white-color);
-  padding: 16px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  margin-top: 48px;
-  border: none;
-}
-.button-order:hover,
-.button-order:focus {
-  background: var(--accent-color);
-} */
 .pointer {
   cursor: pointer;
 }
@@ -51,10 +30,6 @@ body {
   max-width: 100%;
   height: auto;
 } */
-.navi-link:focus,
-.navi-link:hover {
-  color: var(--accent-color);
-}
 
 .header-navi {
 }
@@ -75,7 +50,10 @@ body {
   letter-spacing: 0.1em;
   color: var(--primary-white-color);
 }
-
+.navi-link:focus,
+.navi-link:hover {
+  color: var(--accent-color);
+}
 .navi-tel {
   font-weight: 600;
   font-size: 12px;
@@ -84,15 +62,52 @@ body {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-
-.navi-btn {
+.button-one {
+  display: inline-block;
   font-family: inherit;
+  background-color: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  padding: 12px 20px;
   color: var(--primary-white-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+.button-one:hover,
+.button-one:focus {
+  background-color: var(--accent-color);
+}
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--dark-color);
+}
+/* hero */
+.small-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--grey-rgba);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--primary-white-color);
+}
+.hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--grey-main);
 }
 /* reset styles */
 ul {
