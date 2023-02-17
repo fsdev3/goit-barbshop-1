@@ -62,7 +62,7 @@ body {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-.button-one {
+.button-book {
   display: inline-block;
   font-family: inherit;
   background-color: inherit;
@@ -76,8 +76,8 @@ body {
   border: 1px solid var(--accent-color);
   border-radius: 25px;
 }
-.button-one:hover,
-.button-one:focus {
+.button-book:hover,
+.button-book:focus {
   background-color: var(--accent-color);
 }
 .social-link {
@@ -109,6 +109,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--grey-main);
 }
+
 /* reset styles */
 ul {
   margin: 0;
